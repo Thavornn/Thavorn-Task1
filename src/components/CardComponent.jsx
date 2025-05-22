@@ -2,21 +2,9 @@ import React from "react";
 
 const CardComponent = () => {
   return (
-    <div className="items-center ">
+    <div className=" w-[80%] md:p-10 md:w-[50%]     lg:w-[30%] lg:p-0  2xl:w-[23%] 2xl:p-0">
       <div>
-        {/* <div className="text-3xl mt-10 font-bold p-10 flex justify-baseline gap-2">
-          <div>
-            <span>
-              <img src="/images/heart.png" width={34} alt="" />
-            </span>
-          </div>
-          <div>
-            <span className="text-[#E55050]"> Romantic </span>
-            <span className="text-[#309898]">Memories</span>
-          </div>
-        </div> */}
-
-        <div className="rounded-[30px] p-6">
+        <div className="rounded-4xl">
           <div>
             <img
               className="object-cover w-full h-[263px] rounded-[30px] "
@@ -26,10 +14,22 @@ const CardComponent = () => {
           </div>
           <div>
             <div className="flex justify-between mt-5">
-              <div className="text-[20px] font-[500] text-green-custom">
+              <div className="text-xl font-medium flex text-green-custom">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M16.44 3.102c-1.81 0-3.43.88-4.44 2.23a5.549 5.549 0 0 0-4.44-2.23c-3.07 0-5.56 2.5-5.56 5.59 0 1.19.19 2.29.52 3.31 1.58 5 6.45 7.99 8.86 8.81.34.12.9.12 1.24 0 2.41-.82 7.28-3.81 8.86-8.81.33-1.02.52-2.12.52-3.31 0-3.09-2.49-5.59-5.56-5.59Z"
+                    fill="#309898"
+                  ></path>
+                </svg>
                 Switzerland
               </div>
-              <div className="text-green-custom flex gap-1  text-[12px]">
+              <div className="text-green-custom flex gap-1  text-xs">
                 <div className="mt-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ const CardComponent = () => {
                     ></path>
                   </svg>
                 </div>
-                <div className="mt-1 font-[400] text-[12px]">Jan 26, 2025</div>
+                <div className="mt-1 font-normal text-xs">Jan 26, 2025</div>
               </div>
             </div>
             <p className="mt-5">
@@ -64,7 +64,7 @@ const CardComponent = () => {
             </p>
             <p>
               <a
-                className="text-darkRed-custom flex  gap-x-2 justify-end  mt-5 "
+                className="text-dark-red-custom flex  gap-x-2 justify-end  mt-5 "
                 href="#"
               >
                 Read more{" "}

@@ -2,10 +2,8 @@
 import "./globals.css";
 import { Rubik } from "next/font/google";
 
-import CardComponent from "@/components/CardComponent";
-import NavbarComponent from "@/components/NavbarComponent";
-import ImgBoardComponent from "@/components/ImgBoardComponent";
 import FooterComponent from "@/components/FooterComponent";
+import NavigationComponent from "@/components/NavigationComponent";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -20,11 +18,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${rubik.variable} ${rubik.variable} antialiased`}>
-        <NavbarComponent />
+      <body className={`${rubik.className} antialiased`}>
+        <div className="  min-w-full container mx-auto">
+          {/* <NavbarComponent /> */}
+          {/* <NavigationComponent /> */}
 
-        {children}
-        <FooterComponent />
+          {children}
+        </div>
+        {/* <FooterComponent /> */}
       </body>
     </html>
   );

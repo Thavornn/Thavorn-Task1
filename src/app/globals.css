@@ -1,14 +1,19 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"); */
 
 :root {
   --background: #ffffff;
-  --font-rubik: "Rubik", sans-serif;
+  /* --font-rubik: "Rubik", sans-serif; */
+  --green: #309898;
+  --red: #e55050;
+  --dark-red: #cb0404;
+  --blue: #183b4e;
+  --yellow: #ff9f00;
 }
-.text-green-custom {
+/* .text-green-custom {
   color: #309898;
-}
-.text-red-custom {
+} */
+/* .text-red-custom {
   color: #e55050;
 }
 .text-blue-custom {
@@ -19,11 +24,18 @@
 }
 .text-yellow-custom {
   color: #ff9f00;
-}
+} */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-green-custom: var(--green);
+  --color-red-custom: var(--red);
+  --color-blue-custom: var(--blue);
+  --color-dark-red-custom: var(--dark-red);
+  --color-yellow-custom: var(--yellow);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
